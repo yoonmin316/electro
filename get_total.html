@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>전기요금 구하기</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./src/style_total.css">
+        <script src="./src/func_total.js"></script>
+    </head>
+    <body>
+        <article>
+            <div id="poll">
+            <!--설문조사-->
+             <div class="home">
+                 <p>당신의 주거형태를 고르시오</p>
+                 <p><input type="radio" name="home" value="house" id="house"><label for="house" style="cursor: pointer;">주택</label></p>
+                 <p><input type="radio" name="home" value="apart" id="apart"><label for="apart" style="cursor: pointer;">아파트</label></p>
+                 <br>
+                 <button class="poll" onclick="hide();">시작</button>
+              </div>
+            </div>
+             <div id="main">
+                 <p>총 사용전력량을 입력하세요.</p>
+                 <p><input type="number" placeholder="총 소비전력" id="in_kwh">kWh
+                 </p><br>
+                 <button class="poll" value="click" onclick="elect_charge.main();">click</button>
+                 <p></p><br>
+                 <div id="result"></div>
+              </div>
+            </div>
+        </article>
+    </body>
+</html>

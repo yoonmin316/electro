@@ -1,0 +1,108 @@
+body{
+    font-size: 30px;
+    font-family: 'Jua', sans-serif;
+}
+.poll{
+border: 1px solid #0077ed;
+border-radius: 20px;
+background-color: #0077ed;
+color: white;
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 30%;
+height: 30%;
+font-size: 40px;
+}
+#poll{
+  width: 50%;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  right: 0;
+  padding: 50px;
+  height: max-content;
+  border: 3px solid blue;
+  background-color: white;
+  border-radius: 20px;
+  font-size: 50px;
+  z-index: 2;
+}
+#main{
+  width: 50%;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  right: 0;
+  padding: 50px;
+  height: max-content;
+  border: 3px solid blue;
+  border-radius: 20px;
+  z-index: 1;
+}
+input[type=number]{
+border: 1px solid gray;
+border-radius: 12px;
+height: 1.5rem;
+font-size: 100%;
+padding: 0.7%;
+width: 80%;
+font-family: 'Jua', sans-serif;
+}
+#result{
+  color: red;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 100%;
+  width: fit-content;
+}
+.home{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and(max-width: 700px){
+  #main{
+    position: absolute;
+right: 0;
+left: 0;
+top: 10%;
+width: 80%;
+height: max-content;
+padding: 50px;
+border: 2px solid blue;
+border-radius: 20px;
+z-index: 3;
+/*background-color: black;*/
+color: black;
+font-size: 30px;
+  }
+  #poll{
+    position: absolute;
+width: 80%;
+height: max-content;
+left: 0%;
+top: 10%;
+padding: 50px;
+padding-bottom: 70px;
+z-index: 4;
+background-color: white;
+color: black;
+border: 3px solid blue;
+border-radius: 20px;
+font-size: 25px;
+  }
+  .home{
+    width: 100%;
+  }
+  label{
+cursor: pointer;
+font-size: 35px;
+}
+input[type=number]{
+width: 80%;
+}
+#result{
+font-size: 35px;
+}
+}

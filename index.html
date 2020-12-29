@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>전기&전력량요금</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet"> 
+        <style>
+          body{
+              /*background-image: url('./image/backg.jpg');*/
+              font-family: 'Jua', sans-serif;
+          }
+          #t, #m{
+              width: 100%;
+              height: 100%;
+              border: 1px solid #0077ed;
+              border-radius: 20px;
+              background-color: #0077ed;
+              font-size: 50px;
+              font-family: 'Jua', sans-serif;
+              color: white;
+              cursor: pointer;
+          }
+          .l_r{
+              display: block;
+              width: 40%;
+              height: 50%;
+              margin-top: 5%;
+              margin-left: auto;
+              margin-right: auto;
+          }
+          #main{
+              border: 1px solid purple;
+              border-radius: 20px;
+              display: table;
+              width: 50%;
+              height: auto;
+              padding-bottom: 5%;
+              position: absolute;
+              top: 25%;
+              left: 25%;
+              margin-left: auto;
+              margin-right: auto;
+          }
+          @media(max-width: 700px){
+            #main{
+              border: 1px solid purple;
+              border-radius: 20px;
+              display: table;
+              width: 80%;
+              height: auto;
+              padding-bottom: 5%;
+              position: absolute;
+              top:10%;
+              left: 10%;
+              margin-left: auto;
+              margin-right: auto;
+          }
+          #t, #m{
+              font-size: 35px;
+          }
+          }
+        </style>
+        <script>
+            function go(url){
+                location.href=url;
+            }
+        </script>
+    </head>
+    <body>
+      <div class="pit">
+        <div id="main">
+            <div class="l_r" style="display: block;"><button id="m" onclick="go('./get_part.html')">전력량요금</button></div>
+            <div class="l_r" style="display: block;"><button id="t" onclick="go('./get_total.html')">전기요금</button></div>
+        </div>
+       </div>
+    </body>
+</html>
